@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+    <h2>Estimate Your Detailing Cost</h2>
+    <form id="booking-form">
+        <label for="service-select">Select Service Package:</label>
+        <select id="service-select">
+            <option value="0">-- Select Package --</option>
+            <option value="45">Express Maintenance (R45)</option>
+            <option value="95">Executive Interior (R95)</option>
+            <option value="180">Full Showroom Detail (R180)</option>
+        </select>
+
+        <h3>Add-On Services</h3>
+        <label><input type="checkbox" class="addon-checkbox" value="30"> Headlight Restoration (+R30)</label><br>
+        <label><input type="checkbox" class="addon-checkbox" value="50"> Engine Bay Cleaning (+R50)</label><br>
+        <label><input type="checkbox" class="addon-checkbox" value="100"> Ceramic Coating (+R100)</label>
+
+        <h3>Total Estimated Price: <span id="total-price">R0.00</span></h3>
+
+        <h3>Contact Details</h3>
+        <input type="text" id="client-name" placeholder="Your Full Name"><br><br>
+        <input type="tel" id="client-phone" placeholder="Phone Number"><br><br>
+        <button type="submit">Submit Request</button>
+    </form>
+    
+    <p id="form-feedback"></p>
+</section>
+
+
+<script src="script.js"></script>
+    
+</body>
+</html>
