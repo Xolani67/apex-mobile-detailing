@@ -1,4 +1,4 @@
-// Wait for DOM to fully load
+
 document.addEventListener('DOMContentLoaded', () => {
     
 
@@ -58,9 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ==========================================
-    // 3. Dynamic DOM Manipulation (Current Year)
-    // ==========================================
     const yearSpan = document.getElementById('current-year');
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
